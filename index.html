@@ -6,23 +6,25 @@
 
   <style>
     body {
-  background-image: url("IMG_2387.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  color: white;
-  text-align: center;
-  font-family: Arial;
-}
-    (circle, #000000, #001a1a, #000000);
+      margin: 0;
+      height: 100vh;
+      background-image: url("IMG_2387.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial;
       color: white;
       text-align: center;
-      font-family: Arial;
     }
 
+    /* MENU */
     .menu {
-      background: black;
-      padding: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
       box-shadow: 0 0 20px #00ffcc;
     }
 
@@ -31,10 +33,16 @@
       margin: 15px;
       text-decoration: none;
       font-size: 18px;
+      font-weight: bold;
     }
 
     .menu a:hover {
       text-shadow: 0 0 10px #00ffcc;
+    }
+
+    /* CONTENT */
+    .content {
+      margin-top: 120px;
     }
 
     h1 {
@@ -43,16 +51,17 @@
         0 0 10px #00ffcc,
         0 0 20px #00ffcc,
         0 0 40px #00ffcc;
-      margin-top: 30px;
     }
 
+    /* BOXEN */
     .box {
       display: inline-block;
-      width: 250px;
+      width: 260px;
       padding: 20px;
       margin: 20px;
       border-radius: 15px;
       border: 2px solid #00ffcc;
+      background: rgba(0, 0, 0, 0.6);
       box-shadow: 0 0 20px #00ffcc;
       transition: 0.3s;
       text-decoration: none;
@@ -69,23 +78,27 @@
 
 <body>
 
+  <!-- MENU -->
   <div class="menu">
     <a href="index.html">🏠 Home</a>
     <a href="fussball.html">⚽ Fußball</a>
     <a href="gaming.html">🎮 Gaming</a>
   </div>
 
-  <h1>🔥 Henri x Coach Comeback Arena 🔥</h1>
+  <!-- CONTENT -->
+  <div class="content">
+    <h1>🔥 Henri x Coach Comeback Arena 🔥</h1>
 
-  <a href="fussball.html" class="box">
-    ⚽ Fußball  
-    <p>Alles über echten Fußball 🔥</p>
-  </a>
+    <a href="fussball.html" class="box">
+      ⚽ Fußball  
+      <p>Alles über echten Fußball 🔥</p>
+    </a>
 
-  <a href="gaming.html" class="box">
-    🎮 Gaming  
-    <p>FIFA & Gaming Content 🔥</p>
-  </a>
+    <a href="gaming.html" class="box">
+      🎮 Gaming  
+      <p>FIFA & Gaming Content 🔥</p>
+    </a>
+  </div>
 
 </body>
 
