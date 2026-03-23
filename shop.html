@@ -1,24 +1,140 @@
-<div class="video-container">
+<!DOCTYPE html>
+<html>
 
-  <div>
-    <h3>📰 Breaking News FIFA</h3>
-    <video controls>
-      <source src="video1.mp4">
-    </video>
+<head>
+  <title>Shop</title>
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background-image: url("IMG_2387.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial;
+      color: white;
+      text-align: center;
+    }
+
+    /* MENU */
+    .menu {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 20px #00ffcc;
+    }
+
+    .menu a {
+      color: #00ffcc;
+      margin: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* CONTENT */
+    .content {
+      margin-top: 120px;
+    }
+
+    h1 {
+      color: #00ffcc;
+      text-shadow: 
+        0 0 10px #00ffcc,
+        0 0 20px #00ffcc,
+        0 0 40px #00ffcc;
+    }
+
+    /* PRODUKTE */
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .product {
+      background: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 15px;
+      border: 2px solid #00ffcc;
+      box-shadow: 0 0 20px #00ffcc;
+      width: 220px;
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      color: #00ffcc;
+      font-size: 20px;
+      margin: 10px 0;
+    }
+
+    .buy {
+      background: #00ffcc;
+      color: black;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-block;
+    }
+
+    .buy:hover {
+      background: white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <div class="menu">
+    <a href="index.html">🏠 Home</a>
+    <a href="fussball.html">⚽ Fußball</a>
+    <a href="gaming.html">🎮 Gaming</a>
+    <a href="shop.html">🛒 Shop</a>
   </div>
 
-  <div>
-    <h3>🎮 Football Entertainment</h3>
-    <video controls>
-      <source src="video2.mp4">
-    </video>
+  <!-- CONTENT -->
+  <div class="content">
+    <h1>🛒 Mein Shop 🛒</h1>
+
+    <div class="products">
+
+      <div class="product">
+        <img src="IMG_2387.png">
+        <h3>⚽ Fußball Shirt</h3>
+        <div class="price">20€</div>
+        <div class="buy">Kaufen</div>
+      </div>
+
+      <div class="product">
+        <img src="IMG_2387.png">
+        <h3>🎮 Gaming Controller</h3>
+        <div class="price">50€</div>
+        <div class="buy">Kaufen</div>
+      </div>
+
+      <div class="product">
+        <img src="IMG_2387.png">
+        <h3>⭐ Pro Gamer Paket</h3>
+        <div class="price">100€</div>
+        <div class="buy">Kaufen</div>
+      </div>
+
+    </div>
+
   </div>
 
-  <div>
-    <h3>⭐ FIFA spielen wie ein Star</h3>
-    <video controls>
-      <source src="video3.mp4">
-    </video>
-  </div>
+</body>
 
-</div>
+</html>
