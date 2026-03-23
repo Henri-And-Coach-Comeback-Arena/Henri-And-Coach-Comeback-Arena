@@ -2,20 +2,47 @@
 <html>
 
 <head>
-  <title>Gaming</title>
+  <title>Gaming Bereich</title>
 
   <style>
-    .video-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
     body {
-      background: radial-gradient(circle, #000000, #001a1a, #000000);
+      margin: 0;
+      height: 100vh;
+      background-image: url("IMG_2387.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial;
       color: white;
       text-align: center;
-      font-family: Arial;
+    }
+
+    /* MENU */
+    .menu {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      box-shadow: 0 0 20px #00ffcc;
+    }
+
+    .menu a {
+      color: #00ffcc;
+      margin: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    /* CONTENT */
+    .content {
+      margin-top: 120px;
     }
 
     h1 {
@@ -26,58 +53,71 @@
         0 0 40px #00ffcc;
     }
 
-    img {
-      width: 70%;
-      margin-top: 20px;
+    /* VIDEO BOX */
+    .video-box {
+      margin-top: 30px;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      border: 2px solid #00ffcc;
       border-radius: 15px;
       box-shadow: 0 0 20px #00ffcc;
-      transition: 0.3s;
-    }
-
-    img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 40px #00ffcc;
-    }
-
-    a {
       display: inline-block;
-      margin-top: 30px;
-      color: #00ffcc;
-      text-decoration: none;
-      font-size: 18px;
     }
+
+    /* VIDEO GRID */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    video {
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <h1>🎮 Gaming Bereich</h1>
+  <!-- MENU -->
+  <div class="menu">
+    <a href="index.html">🏠 Home</a>
+    <a href="fussball.html">⚽ Fußball</a>
+    <a href="gaming.html">🎮 Gaming</a>
+  </div>
 
-  <p>Hier kommt dein Gaming Content 🔥</p>
+  <!-- CONTENT -->
+  <div class="content">
+    <h1>🎮 Gaming Bereich 🎮</h1>
+    <p>Meine besten Clips 🔥</p>
 
-  <!-- HIER MUSST DU NUR DEN NAMEN ÄNDERN -->
-  <img src="IMG_2387.png">
+    <div class="video-box">
+      <h2>📰 Meine Videos</h2>
 
-  <br>
+      <div class="video-container">
 
-  <a href="index.html">⬅️ Zurück</a>
+        <video controls>
+          <source src="video1.mp4">
+        </video>
+
+        <video controls>
+          <source src="video2.mp4">
+        </video>
+
+        <video controls>
+          <source src="video3.mp4">
+        </video>
+
+      </div>
+    </div>
+
+  </div>
 
 </body>
 
 </html>
-<div class="video-box">
-  <h2>🎮 Meine Gaming Clips 🔥</h2>
-
-  <video controls>
-    <source src="Breaking%20News%20FIFA.mp4" type="video/mp4">
-  </video>
-
-  <video controls>
-    <source src="Football%20Entertainment.mp4" type="video/mp4">
-  </video>
-
-  <video controls>
-    <source src="FIFA%20spielen%20wie%20ein%20Star.mp4" type="video/mp4">
-  </video>
-
-</div>
